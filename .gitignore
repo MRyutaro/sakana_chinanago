@@ -1,2 +1,4 @@
 data
-chinanago.mp3
+*.mp3
+*.mp4
+__pycache__
