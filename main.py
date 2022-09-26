@@ -1,1 +1,1 @@
-# data/audio, image, videoを作る
+# python main.py --source <AUDIO_PATH>
