@@ -1,1 +1,1 @@
-data/に、sakana.mp3とchinanago.mp3を用意してください
+data/audio/に、sakana.mp3とchinanago.mp3を用意してください
