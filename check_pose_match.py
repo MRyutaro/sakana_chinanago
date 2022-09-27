@@ -20,10 +20,10 @@ class CheckPoseMatch():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--source', help='this input video')
+    parser.add_argument('--video', help='this input video', default="sakana.mp4")
     args = parser.parse_args()
 
-    capture = cv2.VideoCapture(args.source)
+    capture = cv2.VideoCapture(args.video)
 
     check_pose_match = CheckPoseMatch("sakana")
 

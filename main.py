@@ -5,14 +5,14 @@ from controller.sound_play import SoundPlay
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--source', help='this input video')
+    parser.add_argument('--audio', help='this input audio', default="chinanago.mp3")
     args = parser.parse_args()
     print("識別したいポーズ名をコマンドラインで取得")
     print("再生したい音声のデータのパスをコマンドラインで取得")
 
     capture = cv2.VideoCapture(1)
     is_prepared_pose = CPM("POSTURE_NAME")
-    sound_play = SoundPlay("chinanago.mp3")
+    sound_play = SoundPlay(args.audio)
 
     while capture.isOpened():
         _, image = capture.read()
